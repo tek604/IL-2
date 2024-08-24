@@ -11,7 +11,7 @@ record,                                           key_lcontrol+key_r,           
 fps_counter,                                      key_back,                                         0| // FPS counter toggle
 escape,                                           key_escape,                                       0| // Show/hide ESC menu
 lobby,                                            key_tab,                                          0| // Lobby
-missionbriefing,                                  key_o,                                            0| // Show/hide mission briefing
+missionbriefing,                                  key_f10,                                          0| // Show/hide mission briefing
 switchmap,                                        key_m,                                            0| // Change ingame map mode
 switchgauges,                                     key_i,                                            0| // Show/hide instrument panel, navigation and map markers
 aiminghelp,                                       key_rcontrol+key_i,                               0| // Aiming help
@@ -22,7 +22,7 @@ commandmenu,                                      key_grave,                    
 commandmenu,                                      key_lmenu+key_grave,                              0|
 ipdinc,                                           key_lshift+key_add,                               0| // +IPD correction for fixed IPD HMDs (directly shifts the VR image)
 ipddec,                                           key_lshift+key_numpadenter,                       0| // -IPD correction for fixed IPD HMDs (directly shifts the VR image)
-cam_reset,                                        ,                                                 0| // Reset camera
+cam_reset,                                        key_r,                                            0| // Reset camera
 cam_ext_free_reset,                               key_c,                                            0| // Reset external free camera
 cam_free_slow_mode,                               ,                                                 0| // Free camera - slow mode
 cam_zoom,                                         ,                                                 0| // Camera zoom
@@ -57,55 +57,50 @@ cam_switch_gopro,                                 ,                             
 cam_switch_track,                                 ,                                                 0| // Camera: track
 cam_switch_head_free,                             ,                                                 0| // Camera: head-unlinked cockpit
 freelook,                                         ,                                                 0| // FreeLook
-bc_head_zoom,                                     key_lshift+mouse_axis_z,                          0| // Pilot head: zoom
-bc_head_zoom,                                     key_rmenu+mouse_axis_z,                           0|
-bc_head_cfovi,                                    key_add,                                          0| // Pilot head: zoom in
-bc_head_cfovo,                                    key_subtract,                                     0| // Pilot head: zoom out
-bc_head_cfovr,                                    key_multiply,                                     0| // Pilot head: reset zoom
-bc_head_fov0,                                     key_rcontrol+key_decimal,                         0| // Quick zoom: minimum
-bc_head_fov1,                                     key_rcontrol+key_numpad1,                         0| // Quick zoom: level 1
-bc_head_fov2,                                     key_rcontrol+key_numpad2,                         0| // Quick zoom: level 2
-bc_head_fov3,                                     key_rcontrol+key_numpad3,                         0| // Quick zoom: level 3
-bc_head_fov4,                                     key_rcontrol+key_numpad0,                         0| // Quick zoom: maximum
-rb_zoom,                                          key_lshift+mouse_axis_z,                          0| // Change veh turret zoom
-rb_zoom,                                          key_rmenu+mouse_axis_z,                           0|
-rb_zoom,                                          key_add/key_subtract,                             0|
-mc_zoom,                                          key_lshift+mouse_axis_z,                          0| // Change veh zoom
-mc_zoom,                                          key_rmenu+mouse_axis_z,                           0|
-mc_zoom,                                          key_add/key_subtract,                             0|
-bc_head_pitch,                                    mouse_axis_y,                                     0| // Bow pilot head vertically
-bc_head_yaw,                                      mouse_axis_x,                                     0| // Turn pilot head horizontally
-bc_head_yaw_wrapped,                              mouse_axis_x,                                     0| // Turn gunner's head horizontally
+bc_head_zoom,                                     ,                                                 0| // Pilot head: zoom
+bc_head_cfovi,                                    ,                                                 0| // Pilot head: zoom in
+bc_head_cfovo,                                    ,                                                 0| // Pilot head: zoom out
+bc_head_cfovr,                                    ,                                                 0| // Pilot head: reset zoom
+bc_head_fov0,                                     ,                                                 0| // Quick zoom: minimum
+bc_head_fov1,                                     ,                                                 0| // Quick zoom: level 1
+bc_head_fov2,                                     ,                                                 0| // Quick zoom: level 2
+bc_head_fov3,                                     ,                                                 0| // Quick zoom: level 3
+bc_head_fov4,                                     ,                                                 0| // Quick zoom: maximum
+rb_zoom,                                          ,                                                 0| // Change veh turret zoom
+mc_zoom,                                          ,                                                 0| // Change veh zoom
+bc_head_pitch,                                    ,                                                 0| // Bow pilot head vertically
+bc_head_yaw,                                      ,                                                 0| // Turn pilot head horizontally
+bc_head_yaw_wrapped,                              ,                                                 0| // Turn gunner's head horizontally
 resethmd,                                         ,                                                 0| // Default VR view
-bc_head_cvmodes,                                  key_f9,                                           0| // Change pilot head control method: centered snap - fixed snap - additive snap - pan view
-bc_head_cvss,                                     key_f10,                                          0| // Save current corrections in head snap position
-bc_head_cvc,                                      key_numpad5,                                      0| // Pilot head snap position: center
-bc_head_cvu,                                      key_numpad0,                                      0| // Pilot head snap position modifier: upper
-bc_head_cvd,                                      key_numpadenter,                                  0| // Pilot head snap position modifier: lower
-bc_head_cva,                                      key_decimal,                                      0| // Pilot head snap position modifier: custom
-bc_head_cv0,                                      key_numpad8,                                      0| // Pilot head snap position: forward
-bc_head_cv45,                                     key_numpad9,                                      0| // Pilot head snap position: forward-right
-bc_head_cv90,                                     key_numpad6,                                      0| // Pilot head snap position: right
-bc_head_cv135,                                    key_numpad3,                                      0| // Pilot head snap position: backward-right
-bc_head_cv180,                                    key_numpad2,                                      0| // Pilot head snap position: backward
-bc_head_cv225,                                    key_numpad1,                                      0| // Pilot head snap position: backward-left
-bc_head_cv270,                                    key_numpad4,                                      0| // Pilot head snap position: left
-bc_head_cv315,                                    key_numpad7,                                      0| // Pilot head snap position: forward-left
-bc_head_pos,                                      key_lcontrol+mouse_axis_z,                        0| // Switch veh turret sight position
-bc_head_cvmf,                                     key_insert,                                       0| // Move pilot head forward
-bc_head_cvmb,                                     key_home,                                         0| // Move pilot head backward
-bc_head_cvml,                                     key_delete,                                       0| // Move pilot head left
-bc_head_cvmr,                                     key_end,                                          0| // Move pilot head right
-bc_head_cvmu,                                     key_prior,                                        0| // Move pilot head up
-bc_head_cvmd,                                     key_next,                                         0| // Move pilot head down
-cam_turret_pitch_center,                          key_numpad5,                                      0| // Turret, gunsight view: reset vertical view to gunsight
-cam_turret_pitch,                                 key_lshift+mouse_axis_y,                          0| // Turret, gunsight view: view vertical
-cam_turret_yaw_center,                            key_numpad5,                                      0| // Turret, gunsight view: reset horizontal view to gunsight
-cam_turret_yaw,                                   key_lshift+mouse_axis_x,                          0| // Turret, gunsight view: view horizontal
-cam_rotate_hf_yaw,                                mouse_axis_x,                                     0| // Head independent view left/right
-cam_rotate_hf_pitch,                              mouse_axis_y,                                     0| // Head independent view up/down
-cam_rotate_hf_yaw_center,                         key_numpad5,                                      0| // Center head independent view horizontally
-cam_rotate_hf_pitch_center,                       key_numpad5,                                      0| // Center head independent view vertically
+bc_head_cvmodes,                                  ,                                                 0| // Change pilot head control method: centered snap - fixed snap - additive snap - pan view
+bc_head_cvss,                                     ,                                                 0| // Save current corrections in head snap position
+bc_head_cvc,                                      ,                                                 0| // Pilot head snap position: center
+bc_head_cvu,                                      ,                                                 0| // Pilot head snap position modifier: upper
+bc_head_cvd,                                      ,                                                 0| // Pilot head snap position modifier: lower
+bc_head_cva,                                      ,                                                 0| // Pilot head snap position modifier: custom
+bc_head_cv0,                                      ,                                                 0| // Pilot head snap position: forward
+bc_head_cv45,                                     ,                                                 0| // Pilot head snap position: forward-right
+bc_head_cv90,                                     ,                                                 0| // Pilot head snap position: right
+bc_head_cv135,                                    ,                                                 0| // Pilot head snap position: backward-right
+bc_head_cv180,                                    ,                                                 0| // Pilot head snap position: backward
+bc_head_cv225,                                    ,                                                 0| // Pilot head snap position: backward-left
+bc_head_cv270,                                    ,                                                 0| // Pilot head snap position: left
+bc_head_cv315,                                    ,                                                 0| // Pilot head snap position: forward-left
+bc_head_pos,                                      ,                                                 0| // Switch veh turret sight position
+bc_head_cvmf,                                     ,                                                 0| // Move pilot head forward
+bc_head_cvmb,                                     ,                                                 0| // Move pilot head backward
+bc_head_cvml,                                     ,                                                 0| // Move pilot head left
+bc_head_cvmr,                                     ,                                                 0| // Move pilot head right
+bc_head_cvmu,                                     ,                                                 0| // Move pilot head up
+bc_head_cvmd,                                     ,                                                 0| // Move pilot head down
+cam_turret_pitch_center,                          ,                                                 0| // Turret, gunsight view: reset vertical view to gunsight
+cam_turret_pitch,                                 ,                                                 0| // Turret, gunsight view: view vertical
+cam_turret_yaw_center,                            ,                                                 0| // Turret, gunsight view: reset horizontal view to gunsight
+cam_turret_yaw,                                   ,                                                 0| // Turret, gunsight view: view horizontal
+cam_rotate_hf_yaw,                                ,                                                 0| // Head independent view left/right
+cam_rotate_hf_pitch,                              ,                                                 0| // Head independent view up/down
+cam_rotate_hf_yaw_center,                         ,                                                 0| // Center head independent view horizontally
+cam_rotate_hf_pitch_center,                       ,                                                 0| // Center head independent view vertically
 autopilot,                                        key_a,                                            0| // AI-autopilot on/off
 autolevelflight,                                  key_lshift+key_a,                                 0| // AI-autopilot for level flight: on/off
 autolevelflight_to_left,                          ,                                                 0| // Level flight AI-autopilot: left turn
