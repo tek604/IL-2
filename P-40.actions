@@ -114,10 +114,10 @@ rpc_pitch,                                        joy1_axis_y,                  
 rpc_roll,                                         joy1_axis_x,                                      0| // Plane control: roll
 rpc_yaw,                                          joy2_axis_z,                                      0| // Plane control: yaw
 yaw_reset,                                        ,                                                 0| // Plane control: yaw reset
-rpc_yaw_trim,                                     joy0_b2/joy0_b1,                                  0| // Rudder trim axis
+rpc_yaw_trim,                                     joy3_b2/joy3_b1,                                  0| // Rudder trim axis
 yaw_trim_switch_left,                             ,                                                 0| // Rudder trim switch: left
 yaw_trim_switch_right,                            ,                                                 0| // Rudder trim switch: right
-rpc_pitch_trim,                                   joy0_b13/joy0_b14,                                0| // Elevator trim axis
+rpc_pitch_trim,                                   joy3_b13/joy3_b14,                                0| // Elevator trim axis
 pitch_trim_switch_up,                             ,                                                 0| // Elevator trim switch: up
 pitch_trim_switch_dn,                             ,                                                 0| // Elevator trim switch: down
 rpc_roll_trim,                                    ,                                                 0| // Aileron trim axis
@@ -127,19 +127,19 @@ trims_reset,                                      key_lcontrol+key_t,           
 rpc_adjustable_stabilizer,                        ,                                                 0| // Adjustable stabilizer axis
 adjustable_stabilizer_up,                         ,                                                 0| // Adjustable stabilizer switch: pitch up
 adjustable_stabilizer_dn,                         ,                                                 0| // Adjustable stabilizer switch: pitch down
-flaps_up,                                         joy0_b45,                                         0| // Flaps up
-flaps_dn,                                         joy0_b46,                                         0| // Flaps down
+flaps_up,                                         joy3_b45,                                         0| // Flaps up
+flaps_dn,                                         joy3_b46,                                         0| // Flaps down
 airbrakes,                                        ,                                                 0| // AirBrakes on/off
-airbrakes_on,                                     joy0_b47,                                         0| // AirBrakes on
-airbrakes_off,                                    joy0_b48,                                         0| // AirBrakes off
+airbrakes_on,                                     joy3_b47,                                         0| // AirBrakes on
+airbrakes_off,                                    joy3_b48,                                         0| // AirBrakes off
 attacksiren,                                      ,                                                 0| // Attack Siren on/off
 attacksiren_on,                                   ,                                                 0| // Attack Siren on
 attacksiren_off,                                  ,                                                 0| // Attack Siren off
 windscreenwipers,                                 ,                                                 0| // Windscreen Wipers on/off
 divesystem,                                       ,                                                 0| // Dive recovery system: on/off
 gear,                                             ,                                                 0| // Gear up/down
-gear_up,                                          joy0_b43,                                         0| // Gear up
-gear_dn,                                          joy0_b44,                                         0| // Gear down
+gear_up,                                          joy3_b43,                                         0| // Gear up
+gear_dn,                                          joy3_b44,                                         0| // Gear down
 tailwheel_lock,                                   ,                                                 0| // Tail wheel lock/unlock
 tailwheel_lock_on,                                ,                                                 0| // Tail wheel lock
 tailwheel_lock_off,                               ,                                                 0| // Tail wheel unlock
@@ -148,10 +148,10 @@ rpc_wheel_brakes_left,                            joy2_axis_y,                  
 rpc_wheel_brakes_right,                           joy2_axis_x,                                      1| // Right wheel brakes
 rpc_wheel_brakes_central,                         ,                                                 0| // Nose/tail wheel brakes
 parking_brakes,                                   ,                                                 0| // Wheels parking brakes on/off
-parking_brakes_on,                                joy0_b30,                                         0| // Wheels parking brakes on
-parking_brakes_off,                               joy0_b28,                                         0| // Wheels parking brakes off
+parking_brakes_on,                                joy3_b30,                                         0| // Wheels parking brakes on
+parking_brakes_off,                               joy3_b28,                                         0| // Wheels parking brakes off
 drogue_chute,                                     ,                                                 0| // Drogue chute: release/drop
-canopy_open_close,                                joy0_b42,                                         0| // Canopy open/close
+canopy_open_close,                                joy3_b42,                                         0| // Canopy open/close
 canopy_open,                                      ,                                                 0| // Canopy open
 canopy_close,                                     ,                                                 0| // Canopy close
 window_open_close,                                ,                                                 0| // Window open/close (Ar 234 B-2: mirrors fold/unfold)
@@ -361,9 +361,9 @@ vc_turn,                                          key_right/key_left,           
 vc_gearup,                                        key_x,                                            0| // Gear limiter switch up
 vc_geardown,                                      key_z,                                            0| // Gear limiter switch down
 gunsight_power,                                   key_lmenu+key_l,                                  0| // Gunsight power toggle
-tc_aim_x,                                         joy0_axis_x,                                      0| // Turret control: horizontal (direct mode)
+tc_aim_x,                                         joy3_axis_x,                                      0| // Turret control: horizontal (direct mode)
 tc_aim_x,                                         key_d/key_a,                                      0|
-tc_aim_y,                                         joy0_axis_y,                                      0| // Turret control: vertical (direct mode)
+tc_aim_y,                                         joy3_axis_y,                                      0| // Turret control: vertical (direct mode)
 tc_aim_y,                                         key_w/key_s,                                      0|
 rb_pitch,                                         mouse_axis_y,                                     0| // inprb_pitch
 rb_yaw,                                           mouse_axis_x,                                     0| // inprb_yaw
