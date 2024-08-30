@@ -142,7 +142,7 @@ rpc_wheel_brakes,                                 ,                             
 rpc_wheel_brakes_left,                            joy2_axis_y,                                      1| // Left wheel brakes
 rpc_wheel_brakes_right,                           joy2_axis_x,                                      1| // Right wheel brakes
 rpc_wheel_brakes_central,                         ,                                                 0| // Nose/tail wheel brakes
-parking_brakes,                                   ,                                                 0| // Wheels parking brakes on/off
+parking_brakes,                                   joy1_b30,                                         0| // Wheels parking brakes on/off
 parking_brakes_on,                                ,                                                 0| // Wheels parking brakes on
 parking_brakes_off,                               ,                                                 0| // Wheels parking brakes off
 drogue_chute,                                     ,                                                 0| // Drogue chute: release/drop
@@ -151,8 +151,8 @@ canopy_open,                                      ,                             
 canopy_close,                                     ,                                                 0| // Canopy close
 window_open_close,                                ,                                                 0| // Window open/close (Ar 234 B-2: mirrors fold/unfold)
 landing_lights,                                   ,                                                 0| // Landing lights on/off
-navigation_lights,                                ,                                                 0| // Navigation lights on/off
-cockpit_lights,                                   ,                                                 0| // Cockpit light on/off
+navigation_lights,                                joy3_b34,                                         0| // Navigation lights on/off
+cockpit_lights,                                   joy3_b33,                                         0| // Cockpit light on/off
 formation_lights,                                 ,                                                 0| // Formation lights on/off
 autopilot_device,                                 ,                                                 0| // Autopilot on/off
 autopilot_yaw,                                    ,                                                 0| // Autopilot yaw channel on/off
@@ -173,7 +173,7 @@ contact_altimeter_target_altitude_decrease,       ,                             
 radio_volume_decrease,                            ,                                                 0| // Radio receiver volume: decrease
 radio_volume_increase,                            ,                                                 0| // Radio receiver volume: increase
 switch_radio_channel,                             ,                                                 0| // Switch radio channel (allies/enemies)
-bc_eject,                                         ,                                                 0| // Eject
+bc_eject,                                         key_lcontrol+key_e,                               0| // Eject
 autoaltitudinalcorrection,                        ,                                                 0| // Automatic mixtures and superchargers control
 autoradiators,                                    ,                                                 0| // Automatic radiators control
 autorpmlimiter,                                   ,                                                 0| // Automatic RPM limiter
@@ -204,8 +204,8 @@ rpc_all_engines_water_radiators_shutters,         joy3_b8/joy3_b10,             
 all_engines_water_radiators_control_mode,         ,                                                 0| // Switch water radiators control mode: manual/auto
 all_engines_water_radiators_open,                 ,                                                 0| // Bf-109/110 and British aircraft water radiator: open
 all_engines_water_radiators_close,                ,                                                 0| // Bf-109/110 and British aircraft water radiator: close
-rpc_all_engines_in_cowls_shutters,                ,                                                 0| // Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)
-rpc_all_engines_out_cowls_shutters,               ,                                                 0| // Engines outlet cowl shutters control (A-20, Fw 190 A-5, A-6, A-8, La-5, Ju 88, P-40, P-47, C-47, IAR80)
+rpc_all_engines_in_cowls_shutters,                joy3_b16/joy3_b18,                                0| // Engines inlet cowl shutters control (I-16, La-5, Ju 52), Engines upper cowl flaps (A-20), Engines intercooler shutter (P-47)
+rpc_all_engines_out_cowls_shutters,               joy3_b19/joy3_b17,                                0| // Engines outlet cowl shutters control (A-20, Fw 190 A-5, A-6, A-8, La-5, Ju 88, P-40, P-47, C-47, IAR80)
 all_engines_out_cowl_shutters_control_mode,       ,                                                 0| // Switch outlet cowl shutters control mode: manual/auto
 select_all_engines,                               key_0,                                            0| // Switch common control of engines on/off
 select_engine_1,                                  key_1,                                            0| // Switch engine 1 control on/off
@@ -282,8 +282,8 @@ launch_rockets_mode,                              ,                             
 launch_rockets_command,                           joy3_b20,                                         0| // Launch rockets
 jettison_stores_command,                          ,                                                 0| // Jettison stores (CG-4A hook/unhook tow rope, C-47 unhook tow rope)
 bombdoors_toggle,                                 ,                                                 0| // Bomb bay doors toggle (IAR80 bomb release system switch, Li-2 side door)
-bombdoors_open,                                   joy3_b33,                                         0| // Open bomb bay doors
-bombdoors_close,                                  joy3_b33,                                         0| // Close bomb bay doors
+bombdoors_open,                                   ,                                                 0| // Open bomb bay doors
+bombdoors_close,                                  ,                                                 0| // Close bomb bay doors
 bombsafety_toggle,                                joy3_b34,                                         0| // Bombs safety switch
 bombsafety_on,                                    ,                                                 0| // Bombs safety on
 bombsafety_off,                                   ,                                                 0| // Bombs safety off
